@@ -5,7 +5,7 @@ describe('getPaymentTokenFromAPI', function () {
 	it('should return a resolved promise', function (done) {
 		getPaymentTokenFromAPI(true)
 		 .then((response) => {
-			expect(response).to.deep.equal({ data: 'Successful response from the API'});
+			expect(response).to.deep.equal({ data: 'Successful response from the API' });
 			done();
 		 })
 		.catch((error) => {

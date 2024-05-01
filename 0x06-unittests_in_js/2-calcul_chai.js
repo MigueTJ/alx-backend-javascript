@@ -1,9 +1,9 @@
 function calculateNumber (type, a, b) {
-	const firstNum = math.round(a);
+	const firstNum = Math.round(a);
 	const secondNum = Math.round(b);
 
 	if (type === 'SUM') {
-		return first + secondNum;
+		return firstNum + secondNum;
 	}
 
 	if (type === 'SUBTRACT') {

@@ -13,9 +13,9 @@ describe('sendPaymentRequestToApi', function () {
 		consoleLogSpy.restore();
 	});
 
-	it('should log "The total is: 120" when inputs are 100 and 20', function  () {
+	it('should log "The total is: 120" when inputs are 100 and 20', function () {
 		sendPaymentRequestToApi(100, 20);
-		expect(consoleLogSpy.calledonceWith('The total is: 120')).to.be.true;
+		expect(consoleLogSpy.calledOnceWith('The total is: 120')).to.be.true;
 	});
 
 	it('should log "The total is: 20" when inputs are 10 and 10', function () {
