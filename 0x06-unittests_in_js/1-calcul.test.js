@@ -8,8 +8,8 @@ describe('Tests for calculateNumber advanced', function () {
     });
   });
 
-  dscribe('SUBTRACT', function () {
-    it('should return -4 when unputs are 1.4 and 4.5', function () {
+  describe('SUBTRACT', function () {
+    it('should return -4 when inputs are 1.4 and 4.5', function () {
       assert.strictEqual(calculateNumber('SUBTRACT', 1.4, 4.5), -4);
     });
   });
