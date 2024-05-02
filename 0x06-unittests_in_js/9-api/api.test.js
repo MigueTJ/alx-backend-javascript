@@ -25,11 +25,10 @@ describe('Cart page', function () {
     });
   });
 
-  ir('should return status code 404 when :id is not a number', function (done) {
+  it('should return status code 404 when :id is not a number', function (done) {
     request('http://localhost:7865/cart/hello', function (error, response, body) {
       expect(response.statusCode).to.equal(404);
       done();
     });
   });
 });
-
